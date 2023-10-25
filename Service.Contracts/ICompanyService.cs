@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Service.Contracts
 {
-    public class ICompanyService
+    public interface ICompanyService
     {
     }
 }
