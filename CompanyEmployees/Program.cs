@@ -16,6 +16,7 @@ try
     builder.Services.ConfigureIISIntegration();
     builder.Services.ConfigureLoggerService();
     builder.Services.ConfigureRepositoryManager();
+    builder.Services.ConfigureServiceManager();
 
     builder.Services.AddControllers(); // ignores View or Pages controllers, they're not required
 
