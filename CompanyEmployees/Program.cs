@@ -21,6 +21,8 @@ try
     builder.Services.AddControllers()
         .AddApplicationPart(typeof(CompanyEmployees.Presentation.AssemblyReference).Assembly);
 
+    builder.Services.AddAutoMapper(typeof(Program));
+
     builder.Services.AddControllers(); // ignores View or Pages controllers, they're not required
 
     var app = builder.Build();
