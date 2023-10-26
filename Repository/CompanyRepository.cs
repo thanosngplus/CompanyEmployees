@@ -8,5 +8,10 @@ namespace Repository
         public CompanyRepository(RepositoryContext repositoryContext) : base(repositoryContext)
         {
         }
+
+        public IEnumerable<Company> GetAllCompanies(bool trackChanges) =>
+            FindAll(trackChanges)
+                .OrderBy(company => company.Name)
+                .ToList(); // runs the query
     }
 }
