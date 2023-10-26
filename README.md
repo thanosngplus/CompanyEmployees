@@ -4,15 +4,17 @@
 A REST API for an application that tracks company information, and their employees.
 
 ## "Why?"
-My work experience comprised of Python and TypeScript, and I was interested to see how the world of .NET and C# is.
+Long story short: **Because it's fun!**
 
-But, short story long...
-First thing I did was [go through the foundations of C# by Microsoft](https://www.freecodecamp.org/learn/foundational-c-sharp-with-microsoft/). 
-I loved what I saw, and immediately bought [C# Player's Guide](https://csharpplayersguide.com/) after a strong recommendation from a friend.
-After going through most of the projects, I followed the official .NET Core web API and MVC guides from Microsoft, made some small mock project, but it felt simple.
-Wanting to dive deeper in the world of .NET I decided to "overengineer" the next project. 
+However, short story long...
+1. Started with [the foundations of C# by Microsoft](https://www.freecodecamp.org/learn/foundational-c-sharp-with-microsoft/). 
+2. I loved what I saw, and immediately bought [C# Player's Guide](https://csharpplayersguide.com/) after a strong recommendation from a friend.
+3. I followed the official .NET Core web API and MVC guides from Microsoft, made some small mock projects to get the basic gist, but they felt simple.
 
-This is the combined result of book reading, stackoverflow, Discord asking, and lots of googling. Because why not?
+Wanting to dive deeper in the world of .NET I decided to "overengineer" the next project, and... Behold!
+This is the combined result of books, StackOverflow, Discord asking, and lots of googling. 
+
+
 
 ## Quick Start
 Section pending
