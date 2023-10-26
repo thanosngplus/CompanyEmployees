@@ -5,6 +5,7 @@ using System.Linq.Expressions;
 
 namespace Repository
 {
+    // #TODO code smell and anti-pattern?!? https://stackoverflow.com/questions/71223648/asp-net-core-possible-null-reference-return-in-generic-repository
     public abstract class RepositoryBase<T> : IRepositoryBase<T> where T : class
     {
         protected RepositoryContext RepositoryContext;

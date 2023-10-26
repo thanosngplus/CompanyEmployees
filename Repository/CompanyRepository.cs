@@ -13,5 +13,11 @@ namespace Repository
             FindAll(trackChanges)
                 .OrderBy(company => company.Name)
                 .ToList(); // runs the query
+
+        public Company? GetCompany(Guid companyId, bool trackChanges) =>
+            // #TODO is new Company a good way to handle null return?
+            FindByCondition(company => 
+                company.Id.Equals(companyId), trackChanges)
+                .SingleOrDefault();
     }
 }
