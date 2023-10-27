@@ -17,7 +17,8 @@ This is the combined result of books, StackOverflow, Discord asking, and lots of
 
 
 ## Quick Start
-Section pending
+After `git clone` cd to the folder and use `dotnet run`.
+Defaults to Swagger.
 
 ## Usage
 Section pending
