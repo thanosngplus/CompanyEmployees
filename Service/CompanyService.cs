@@ -30,6 +30,7 @@ namespace Service
         public CompanyDto GetCompany(Guid companyId, bool trackChanges)
         {
             var company = _repository.Company.GetCompany(companyId, trackChanges);
+            // #TODO exceptions are expensive, gotta handle it differently
             if (company is null)
                 throw new CompanyNotFoundException(companyId);
 

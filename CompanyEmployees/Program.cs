@@ -21,11 +21,23 @@ builder.Services.AddControllers()
 builder.Services.AddAutoMapper(typeof(Program));
 
 builder.Services.AddControllers(); // ignores View or Pages controllers, they're not required
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
 var appLogger = app.Services.GetRequiredService<ILoggerManager>();
 app.ConfigureExceptionHandler(appLogger);
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+    app.UseSwaggerUI(options =>
+    {
+        options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
+        options.RoutePrefix = string.Empty;
+    });
+}
 
 if (app.Environment.IsProduction())
     app.UseHsts();
