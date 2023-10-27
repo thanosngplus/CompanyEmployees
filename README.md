@@ -7,6 +7,7 @@ A REST API for an application that tracks company information, and their employe
 Long story short: **Because it's fun!**
 
 However, short story long...
+
 0. Learned some Java by the University of Helsinki MOOC Center 
 1. Started with [the foundations of C# by Microsoft](https://www.freecodecamp.org/learn/foundational-c-sharp-with-microsoft/). 
 2. I loved what I saw, and immediately bought [C# Player's Guide](https://csharpplayersguide.com/) after a strong recommendation from a friend.
