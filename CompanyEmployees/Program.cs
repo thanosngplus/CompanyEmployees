@@ -42,6 +42,7 @@ if (app.Environment.IsDevelopment())
 if (app.Environment.IsProduction())
     app.UseHsts();
 
+
 app.UseHttpsRedirection();
 
 
